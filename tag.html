@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>标签管理</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .user-img {
+            height: 40px;
+            width: 40px;
+            padding-top: 5px;
+        }
+        
+        h3 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        .mal10 {
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">OA办公系统</a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">
+                            <span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-list.html">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="content.html">
+                            <span class="glyphicon glyphicon-th"></span>&nbsp;&nbsp;内容管理
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="tag.html">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="email.html">
+                            <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;我的邮箱
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="user-img">
+                            <a href="#">
+                                <img class="img-responsive" src="images/touxiang.jpg" />
+                            </a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp;前台首页
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;账户中心
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>TAG标签管理</h3>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入要添加的标签">
+                    <span class="input-group-btn mal10">
+        		<button class="btn btn-default " type="button">添加</button>
+      			</span>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    $('#add').popover('show')
+
+</script>
